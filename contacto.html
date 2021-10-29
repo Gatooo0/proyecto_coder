@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página de Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <header class="banner" id="inicio">
+        <!-- Inicio Logo con link a Home-->
+        <div class="bannerBoton">
+            <a href="index + Lopez Gaston.html">
+                <button class="logo">
+                </button>
+            </a>
+        </div>
+        <!-- Fin Logo -->
+    </header>
+    <!-- Fin Header -->
+    <!-- Inicio Menu de Navegacion -->
+    <nav class="navBar">
+        <ul class="menuNav">
+            <li> <a href="tienda.html"> Tienda </a> </li>
+            <li> <a href="galeria.html"> Galería </a> </li>
+            <li> <a href="nosotros.html"> Sobre Nosotros </a> </li>
+            <li> <a href="contacto.html"> Contacto </a> </li>
+        </ul>
+    </nav>
+    <!-- Fin Menu de Navegacion -->
+
+    <!-- Inicio Contacto -->
+    <section class="contacto">
+        <div class="contactTitulo">
+            <h1 class="tituloGrande">Consultas</h1>
+        </div>
+        <!-- Inicio Formulario -->
+        <div class="contactFormulario">
+            <form action="">
+                <fieldset>
+                    <!-- Inicio Nombre, Apellido y Mail -->
+                    <legend class="tituloFormulario">Formulario de Consultas</legend>
+                    <label for="name">Nombre:</label>
+                    <input class="inputContFormulario" type="text" name="name" placeholder="Ingrese su Nombre" required>
+                    <br>
+                    <label for="surname">Apellido:</label>
+                    <input class="inputContFormulario" type="text" name="surname" placeholder="Ingrese su Apellido"
+                        required>
+                    <br>
+                    <label for="mail">Dirección de e-mail:</label>
+                    <input class="inputContFormulario" type="email" name="mail" placeholder="Ingrese su e-mail"
+                        required>
+                    <br>
+                    <!-- Fin Nombre, Apellido y Mail -->
+                    <!-- Inicio País -->
+                    <label for="pais">Indique su País:</label>
+                    <div></div>
+                    <input type="radio" name="pais" value="argentina"> Argentina
+                    <div></div>
+                    <input type="radio" name="pais" value="chile"> Chile
+                    <div></div>
+                    <input type="radio" name="pais" value="paraguay"> Paraguay
+                    <div></div>
+                    <input type="radio" name="pais" value="uruguay"> Uruguay
+                    <div></div>
+                    <input type="radio" name="pais" value="otro" checked> Otro
+                    <br>
+                    <br>
+                    <!-- Fin País -->
+                    <!-- Inicio Artículo -->
+                    <div>¿Sobre qué Artículo/s es su consulta?:</div>
+                    <input type="checkbox" name="cbox1"> Chapitas
+                    <input type="checkbox" name="cbox2"> Lámparas
+                    <input type="checkbox" name="cbox3"> Macetas
+                    <input type="checkbox" name="cbox4"> Mates
+                    <input type="checkbox" name="cbox5"> Artículo Personalizado
+                    <br>
+                    <br>
+                    <!-- Fin Artículo -->
+                    <!-- Inicio Color -->
+                    <div>
+                        Seleccione el color principal para imprimir:
+                    </div>
+                    <label for="color">Color:</label>
+                    <select name="color" id="">
+                        <option value="">Seleccione su color</option>
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="rosa">Rosa</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Fin Color -->
+                    <!-- Inicio TextArea -->
+                    <label for="consulta">Escribí tu consulta:</label>
+                    <br>
+                    <textarea name="consulta" id="" cols="30" rows="10" maxlength="500"></textarea>
+                    <br>
+                    <br>
+                    <!-- Fin TextArea -->
+                    <!-- Inicio Pasos Finales -->
+                    <label for="newsletter">¿Desea suscribirse al Newsletter? </label>
+                    <input type="checkbox" name="news" required>
+                    <br>
+                    <br>
+                    <input class="botonContFormulario" type="submit" value="Enviar consulta">
+                    <input class="botonContFormulario" type="reset" value="Limpiar fomulario">
+                    <!-- Fin Pasos Finales -->
+                </fieldset>
+            </form>
+        </div>
+        <!-- Fin Formulario -->
+    </section>
+    <!-- Fin Contacto -->
+
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="foot">
+            <!-- Inicio Info de Contacto -->
+            <div class="footInfo">
+                <h3 class="tituloTerciario">Informacion de Contacto</h3>
+                <ul class="footTexto">
+                    <li>Dirección: Francisco N. Laprida 814 Oeste San Juan</li>
+                    <li>Teléfono: +542644572233</li>
+                    <li>Mail: lambda3d@gmail.com</li>
+                </ul>
+            </div>
+            <!-- Fin Info de Contacto -->
+            <!-- Inicio Redes -->
+            <div class="footRedes">
+                <h3 class="tituloTerciario">Seguinos en Nuestras Redes:</h3>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <!-- Fin Redes -->
+            <!-- Inicio Logo con link hacia Arriba -->
+            <div class="footBoton">
+                <a href="#inicio">
+                    <button class="footLogo">
+                        <!-- <img src="./img/arriba.jpg" alt=""> -->
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Fin Logo con link hacia Arriba -->
+        <!-- Inico Copyright -->
+        <div class="footCopy">
+            <p class="footTexto">Copyright 2021: Gastón López</p>
+        </div>
+        <!-- Fin Copyright -->
+    </footer>
+    <!-- Fin Footer -->
+
+</body>
+<script src="https://kit.fontawesome.com/c091e997ce.js" crossorigin="anonymous"></script>
+
+</html>
