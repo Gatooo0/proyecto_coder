@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>Index</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,9 @@
 
 <body>
     <!-- Inicio Header -->
-    <header class="banner" id="inicio">
-    </header>
+    <header class="banner" id="inicio"></header>
     <!-- Fin Header -->
+
     <!-- Inicio Menu de Navegacion -->
     <nav class="navbar navbar-expand-lg navbar-light navegBar" style="background-color: #90f14f;">
         <div class="container-fluid menuNav">
@@ -57,40 +57,90 @@
     </nav>
     <!-- Fin Menu de Navegacion -->
 
-    <!-- Inicio Galeria -->
-    <section class="galeria">
-        <div class="galTitulo">
-            <h1 class="tituloGrande">Galería</h1>
+    <!-- Inicio Main -->
+    <main>
+        <!-- Inicio Cont Principal -->
+        <div class="contPrincipal container-fluid">
+            <div class="tituloContPrin">
+                <h1 class="tituloGrande">Novedades</h1>
+            </div>
+            <div class="imgNovedad">
+                <img src="./img/novedad.png" alt="novedad">
+            </div>
+            <div class="novedadPromo">
+                <h2 class="tituloSecundario">Promociones:</h2>
+                <article class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab eius quasi, incidunt molestiae
+                    similique
+                    amet recusandae iure ipsum officia iste vero. Corporis quaerat fugit culpa, distinctio quas
+                    voluptates
+                    voluptas.
+                </article>
+            </div>
+            <div class="novedadOferta">
+                <h2 class="tituloSecundario">Ofertas:</h2>
+                <article class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab eius quasi, incidunt molestiae
+                    similique
+                    amet recusandae iure ipsum officia iste vero. Corporis quaerat fugit culpa, distinctio quas
+                    voluptates
+                    voluptas.
+                </article>
+            </div>
         </div>
-        <!-- Inicio Contenido -->
-        <div class="galCont">
-            <!-- Inicio Fotos -->
-            <h2 class="tituloSecundario">Fotos de Clientes</h2>
-            <div class="galFotos">
+        <!-- Fin Cont Principal -->
+    </main>
+    <!-- Fin Main -->
 
-                <div class="cliente1">
-                    <img src="./img/luna.jpeg" alt="Luna">
-                </div>
-                <div class="cliente2">
-                    <img src="./img/soporte.jpeg" alt="soporte">
-                </div>
-            </div>
-            <!-- Fin Fotos -->
-            <!-- Inicio Videos -->
-            <h2 class="tituloSecundario">Como lo hacemos</h2>
-            <div class="galVideos">
-                <div>
-                    <video src="./video/" controls></video>
-                </div>
-            </div>
-            <!-- Fin Videos -->
+    <!-- Inicio Prod Destacados -->
+    <section class="contSecundario container-fluid">
+        <div class="tituloContSec">
+            <h2 class="tituloSecundario">Productos Destacados</h2>
         </div>
-        <!-- Fin Contenido -->
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="grogu">
+                            <img src="./img/grogu.jpeg" class="d-block" alt="grogu">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="grogu">
+                            <img src="./img/luna.jpeg" class="d-block w-50" alt="luna">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="macetas">
+                            <img src="./img/macetas.jpeg" class="d-block w-50" alt="macetas">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </section>
-    <!-- Fin Galeria -->
+    <!-- Fin Prod Destacados -->
 
     <!-- Inicio Footer -->
-    <footer>
+    <footer class="container-fluid">
         <div class="foot">
             <!-- Inicio Info de Contacto -->
             <div class="footInfo">

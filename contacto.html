@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Página de Contacto</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
@@ -18,24 +21,40 @@
 <body>
     <!-- Inicio Header -->
     <header class="banner" id="inicio">
-        <!-- Inicio Logo con link a Home-->
-        <div class="bannerBoton">
-            <a href="index + Lopez Gaston.html">
-                <button class="logo">
-                </button>
-            </a>
-        </div>
-        <!-- Fin Logo -->
     </header>
     <!-- Fin Header -->
     <!-- Inicio Menu de Navegacion -->
-    <nav class="navBar">
-        <ul class="menuNav">
-            <li> <a href="tienda.html"> Tienda </a> </li>
-            <li> <a href="galeria.html"> Galería </a> </li>
-            <li> <a href="nosotros.html"> Sobre Nosotros </a> </li>
-            <li> <a href="contacto.html"> Contacto </a> </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light navegBar" style="background-color: #90f14f;">
+        <div class="container-fluid menuNav">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.JPG" alt="" width="80" height="80" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
     </nav>
     <!-- Fin Menu de Navegacion -->
 
@@ -45,78 +64,124 @@
             <h1 class="tituloGrande">Consultas</h1>
         </div>
         <!-- Inicio Formulario -->
-        <div class="contactFormulario">
-            <form action="">
+        <div class="container">
+            <h1>Formulario</h1>
+            <form>
                 <fieldset>
                     <!-- Inicio Nombre, Apellido y Mail -->
-                    <legend class="tituloFormulario">Formulario de Consultas</legend>
-                    <label for="name">Nombre:</label>
-                    <input class="inputContFormulario" type="text" name="name" placeholder="Ingrese su Nombre" required>
-                    <br>
-                    <label for="surname">Apellido:</label>
-                    <input class="inputContFormulario" type="text" name="surname" placeholder="Ingrese su Apellido"
-                        required>
-                    <br>
-                    <label for="mail">Dirección de e-mail:</label>
-                    <input class="inputContFormulario" type="email" name="mail" placeholder="Ingrese su e-mail"
-                        required>
-                    <br>
+                    <div class="mb-3">
+                        <label for="name" class="form-label col-form-label-lg">Nombre</label>
+                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Ingrese su Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label col-form-label-lg">Apellido</label>
+                        <input type="text" class="form-control form-control-lg" id="surname" placeholder="Ingrese su Apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label col-form-label-lg">Dirección de Email</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Ingrese su e-mail"
+                            required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
                     <!-- Fin Nombre, Apellido y Mail -->
                     <!-- Inicio País -->
-                    <label for="pais">Indique su País:</label>
-                    <div></div>
-                    <input type="radio" name="pais" value="argentina"> Argentina
-                    <div></div>
-                    <input type="radio" name="pais" value="chile"> Chile
-                    <div></div>
-                    <input type="radio" name="pais" value="paraguay"> Paraguay
-                    <div></div>
-                    <input type="radio" name="pais" value="uruguay"> Uruguay
-                    <div></div>
-                    <input type="radio" name="pais" value="otro" checked> Otro
-                    <br>
-                    <br>
+                    <div class="mb-3">
+                        <label for="pais" class="form-label col-form-label-lg">Indique su País</label>
+                        <div class="form-check">
+                            <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadio1"
+                                checked>
+                            <label class="form-check-label" for="flexRadio1">
+                                Argentina
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio2">
+                            <label class="form-check-label" for="flexRadio2">
+                                Chile
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio3">
+                            <label class="form-check-label" for="flexRadio3">
+                                Paraguay
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio4">
+                            <label class="form-check-label" for="flexRadio4">
+                                Uruguay
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio5">
+                            <label class="form-check-label" for="flexRadio5">
+                                Otro
+                            </label>
+                        </div>
+                    </div>
                     <!-- Fin País -->
                     <!-- Inicio Artículo -->
-                    <div>¿Sobre qué Artículo/s es su consulta?:</div>
-                    <input type="checkbox" name="cbox1"> Chapitas
-                    <input type="checkbox" name="cbox2"> Lámparas
-                    <input type="checkbox" name="cbox3"> Macetas
-                    <input type="checkbox" name="cbox4"> Mates
-                    <input type="checkbox" name="cbox5"> Artículo Personalizado
-                    <br>
-                    <br>
+                    <div class="mb-3">
+                        <label for="articulo" class="form-label col-form-label-lg">¿Sobre qué Artículo/s es su consulta?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Chapitas
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Lámparas
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Macetas
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Mates
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Artículo Personalizado
+                            </label>
+                        </div>
+                    </div>
                     <!-- Fin Artículo -->
                     <!-- Inicio Color -->
-                    <div>
-                        Seleccione el color principal para imprimir:
+                    <div class="mb-3">
+                        <label for="articulo" class="form-label col-form-label-lg">Seleccione el color principal para imprimir:</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Seleccione su color</option>
+                            <option value="negro">Negro</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="rosa">Rosa</option>
+                            <option value="amarillo">Amarillo</option>
+                            <option value="azul">Azul</option>
+                            <option value="verde">Verde</option>
+                        </select>
                     </div>
-                    <label for="color">Color:</label>
-                    <select name="color" id="">
-                        <option value="">Seleccione su color</option>
-                        <option value="negro">Negro</option>
-                        <option value="blanco">Blanco</option>
-                        <option value="rojo">Rojo</option>
-                        <option value="rosa">Rosa</option>
-                        <option value="amarillo">Amarillo</option>
-                        <option value="azul">Azul</option>
-                        <option value="verde">Verde</option>
-                    </select>
-                    <br>
-                    <br>
                     <!-- Fin Color -->
                     <!-- Inicio TextArea -->
-                    <label for="consulta">Escribí tu consulta:</label>
-                    <br>
-                    <textarea name="consulta" id="" cols="30" rows="10" maxlength="500"></textarea>
-                    <br>
-                    <br>
+                    <div class="mb-3">
+                        <label for="consulta" class="form-label col-form-label-lg">Escribí tu consulta:</label>
+                        <textarea class="form-control" aria-label="With textarea" name="consulta" id="" cols="30"
+                            rows="10" maxlength="500"></textarea>
+                    </div>
                     <!-- Fin TextArea -->
                     <!-- Inicio Pasos Finales -->
-                    <label for="newsletter">¿Desea suscribirse al Newsletter? </label>
-                    <input type="checkbox" name="news" required>
-                    <br>
-                    <br>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label col-form-label-lg" for="newsletter">¿Desea suscribirse al Newsletter?</label>
+                    </div>
                     <input class="botonContFormulario" type="submit" value="Enviar consulta">
                     <input class="botonContFormulario" type="reset" value="Limpiar fomulario">
                     <!-- Fin Pasos Finales -->
@@ -167,5 +232,9 @@
 
 </body>
 <script src="https://kit.fontawesome.com/c091e997ce.js" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
 
 </html>
