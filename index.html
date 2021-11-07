@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Inicio - Lambda 3D</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
@@ -18,15 +18,11 @@
 </head>
 
 <body>
-    <!-- Inicio Header -->
-    <header class="banner" id="inicio"></header>
-    <!-- Fin Header -->
-
     <!-- Inicio Menu de Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-light navegBar" style="background-color: #90f14f;">
+    <nav class="navbar navbar-expand-lg navbar-light navegBar">
         <div class="container-fluid menuNav">
             <a class="navbar-brand" href="index.html">
-                <img src="./img/logo.JPG" alt="" width="80" height="80" class="logo">
+                <img src="./img/logo.JPG" alt="" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,16 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="tienda.html">Tienda</a>
+                        <a class="nav-link active" aria-current="page" href="./html/tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                        <a class="nav-link active" aria-current="page" href="./html/galeria.html">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="./html/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="./html/contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -56,6 +52,10 @@
         </div>
     </nav>
     <!-- Fin Menu de Navegacion -->
+
+    <!-- Inicio Header -->
+    <header class="banner container-fluid" id="inicio"></header>
+    <!-- Fin Header -->
 
     <!-- Inicio Main -->
     <main>
@@ -68,7 +68,7 @@
                 <img src="./img/novedad.png" alt="novedad">
             </div>
             <div class="novedadPromo">
-                <h2 class="tituloSecundario">Promociones:</h2>
+                <h2 class="tituloSecundarioOscuro">Promociones:</h2>
                 <article class="texto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab eius quasi, incidunt molestiae
                     similique
@@ -78,7 +78,7 @@
                 </article>
             </div>
             <div class="novedadOferta">
-                <h2 class="tituloSecundario">Ofertas:</h2>
+                <h2 class="tituloSecundarioOscuro">Ofertas:</h2>
                 <article class="texto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab eius quasi, incidunt molestiae
                     similique
@@ -95,7 +95,7 @@
     <!-- Inicio Prod Destacados -->
     <section class="contSecundario container-fluid">
         <div class="tituloContSec">
-            <h2 class="tituloSecundario">Productos Destacados</h2>
+            <h2 class="tituloSecundarioClaro">Productos Destacados</h2>
         </div>
         <div class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -163,7 +163,6 @@
             <div class="footBoton">
                 <a href="#inicio">
                     <button class="footLogo">
-                        <!-- <img src="./img/arriba.jpg" alt=""> -->
                     </button>
                 </a>
             </div>

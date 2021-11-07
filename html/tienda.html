@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Lambda 3D</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Inicio Menu de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light navegBar">
+        <div class="container-fluid menuNav">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.JPG" alt="" width="80" height="80" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="background-color: #c6f14f;" aria-current="page"
+                            href="../html/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Menu de Navegacion -->
+
+    <!-- Inicio Header -->
+    <header class="banner" id="inicio">
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Tienda -->
+    <section class="tienda">
+        <div class="tiendaTitulo">
+            <h1 class="tituloGrande">Tienda</h1>
+        </div>
+
+        <!-- Inicio Productos -->
+        <div class="productos">
+            <!-- Inicio Columna Tienda -->
+            <div class="columna">
+                <h2 class="tituloSecundario">Categorías</h2>
+                <!-- Inicio Tabla-Categorías -->
+                <table border="3" class="tablaColumna">
+                    <tr>
+                        <th class="tituloTabla">Seleccione un Producto</th>
+                    </tr>
+                    <!-- Hago una lista para poder filtrar las elecciones del cliente -->
+                    <tr>
+                        <td>
+                            <ul class="listaTabla">
+                                <label for="producto"></label>
+                                <li><input type="radio" name="producto" value="chapita"> Chapitas para mascotas</li>
+                                <li><input type="radio" name="producto" value="lampara"> Lámpáras</li>
+                                <li><input type="radio" name="producto" value="lito"> Litofanías</li>
+                                <li><input type="radio" name="producto" value="llave"> Llaveros</li>
+                                <li><input type="radio" name="producto" value="maceta"> Macetas</li>
+                                <li><input type="radio" name="producto" value="mate"> Mates</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Fin Tabla-Categorías -->
+                <!-- Inicio Tabla-Características -->
+                <h2 class="tituloSecundario">Características</h2>
+                <table border="3" class="tablaColumna">
+                    <tr>
+                        <th>Color</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="listaTabla">
+                                <label for="color"></label>
+                                <li><input type="radio" name="color" value="negro"> Negro</li>
+                                <li><input type="radio" name="color" value="blanco"> Blanco</li>
+                                <li><input type="radio" name="color" value="rojo"> Rojo</li>
+                                <li><input type="radio" name="color" value="rosa"> Rosa</li>
+                                <li><input type="radio" name="color" value="amarillo"> Amarillo</li>
+                                <li><input type="radio" name="color" value="azul"> Azul</li>
+                                <li><input type="radio" name="color" value="verde"> Verde</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tamaño</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="listaTabla">
+                                <label for="tamaño"></label>
+                                <li><input type="radio" name="tamaño" value="pequeño"> Pequeño</li>
+                                <li><input type="radio" name="tamaño" value="mediano"> Mediano</li>
+                                <li><input type="radio" name="tamaño" value="grande"> Grande</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="listaTabla">
+                                <label for="precio"></label>
+                                <li><input type="radio" name="precio" value="menor"> Menos de: $$$</li>
+                                <li><input type="radio" name="precio" value="mayor"> Más de: $$$</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Fin Tabla-Características -->
+            </div>
+            <!-- Fin Columna Tienda -->
+
+            <!-- Inicio Grilla de Productos -->
+            <div class="grilla">
+                <div class="cajita1">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+                <div class="cajita2">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+                <div class="cajita3">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+                <div class="cajita4">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+                <div class="cajita5">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+                <div class="cajita6">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+                <div class="cajita7">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+                <div class="cajita8">
+                    <img src="../img/grogu.jpeg" alt="">
+                    <p>Precio: $$$</p>
+                </div>
+
+            </div>
+            <!-- Fin Grilla de Productos -->
+        </div>
+        <!-- Fin Productos -->
+    </section>
+    <!-- Fin Tienda -->
+
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="foot">
+            <!-- Inicio Info de Contacto -->
+            <div class="footInfo">
+                <h3 class="tituloTerciario">Informacion de Contacto</h3>
+                <ul class="footTexto">
+                    <li>Dirección: Francisco N. Laprida 814 Oeste San Juan</li>
+                    <li>Teléfono: +542644572233</li>
+                    <li>Mail: lambda3d@gmail.com</li>
+                </ul>
+            </div>
+            <!-- Fin Info de Contacto -->
+            <!-- Inicio Redes -->
+            <div class="footRedes">
+                <h3 class="tituloTerciario">Seguinos en Nuestras Redes:</h3>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <!-- Fin Redes -->
+            <!-- Inicio Logo con link hacia Arriba -->
+            <div class="footBoton">
+                <a href="#inicio">
+                    <button class="footLogo">
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Fin Logo con link hacia Arriba -->
+        <!-- Inico Copyright -->
+        <div class="footCopy">
+            <p class="footTexto">Copyright 2021: Gastón López</p>
+        </div>
+        <!-- Fin Copyright -->
+    </footer>
+    <!-- Fin Footer -->
+
+</body>
+<script src="https://kit.fontawesome.com/c091e997ce.js" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+</html>
