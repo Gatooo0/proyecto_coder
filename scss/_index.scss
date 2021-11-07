@@ -1,0 +1,64 @@
+/* ----------INDEX---------- */
+  main{
+    display: flex;
+  }
+  .contPrincipal{
+    display: grid;
+    padding: 1rem;
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    justify-items: center;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "imagen Promo Oferta"
+    ;
+  }
+  .tituloContPrin{
+    grid-area: titulo;
+  }
+  .imgNovedad{
+    grid-area: imagen;
+  }
+  .imgNovedad img{
+    border-radius: 90px;
+  }
+  .novedadPromo{
+    grid-area: Promo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-style: dotted;
+  }
+  .novedadOferta {
+    grid-area: Oferta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-style: dotted;
+  }
+  .texto{
+    font-size: 30px;
+    color: black;
+    text-align: justify;
+  }
+  .contSecundario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #4B7B4B;
+    height: 80vh;
+  }
+  .grogu, .macetas{
+    display:flex;
+    justify-content: center;
+  }
+  .grogu img{
+    width: 38%;
+    border-radius: 40px;
+  }
+  .macetas img{
+    border-radius: 40px;
+  }

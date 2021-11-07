@@ -1,0 +1,53 @@
+  /* ----------CONTACTO---------- */
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: palegreen;
+    border: black solid;
+    align-items: center;
+  }
+  .contactFormulario{
+    width: 80%;
+    background-color: #315131;
+  }
+  .contactFormulario form fieldset{
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .tituloFormulario{
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f4d03f;
+    text-decoration: underline;
+  }
+  .inputContFormulario, select, option, .botonContFormulario{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: #eef8ee;
+  }
+  select{
+    cursor: pointer
+  }
+  textarea{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    background-color: #eef8ee;
+    font-family: 'Gemunu Libre', sans-serif;
+  }
+  .botonContFormulario{
+    cursor: pointer;
+    margin-left: 25%;
+    border-color: #172617;
+  }
+  .botonContFormulario:hover{
+    border-color: royalblue;
+    background-color: #99b899;
+  }
+  

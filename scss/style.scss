@@ -1,0 +1,191 @@
+/* ----------RESETEO---------- */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* ----------BODY---------- */
+  /* Versión Mobile */
+body{
+font-family: 'Gemunu Libre', sans-serif;
+background-color: #ffee00;
+}
+  /* Versión Tablet */
+@media(min-width: 768px){
+  body{
+    background-color: darkviolet;
+  }
+}
+  /* Versión Escritorio */
+@media(min-width: 992px){
+  body{
+    background-color: #98fb98;
+  }
+}
+
+/*----------IMPORTS----------*/
+@import "index";
+@import "tienda";
+@import "galeria";
+@import "nosotros";
+@import "contacto";
+
+/* ----------HEADER---------- */
+  .banner{
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    background-image: url("../img/fondo-banner.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* ----------NAVBAR---------- */
+  .navegBar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bs-body-bg);
+    background-color: rgba(128, 128, 128, 0.3);
+    backdrop-filter: blur(15px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+  }
+  .menuNav{
+    width: 80%;
+  }
+  .menuNav a{
+    text-align: center;
+    font-size: 2.2rem;
+    border-radius: 20px;
+  }
+  .menuNav a:hover{
+    box-shadow: 0 0 10px 0 #000000; 
+    background-color: #f4d03f;
+  }
+  .logo{
+    border-radius: 200px;
+  }
+/* Versión Mobile */
+.logo{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+/* Versión Tablet */
+@media(min-width: 768px){
+  .logo{
+    width: 4rem;
+    height: 4rem;
+  }
+}
+/* Versión Escritorio */
+@media(min-width: 992px){
+  .logo{
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* ----------CONTENIDO---------- */
+  /* ----------INDEX---------- */
+  .tituloGrande{
+    font-size: 5rem;
+    text-decoration: underline;
+    font-weight: 100;
+    color: #047104;
+    z-index: -1;
+  }
+  .tituloSecundarioOscuro{
+    font-size: 3rem;
+    font-weight: 120;
+    color: #161f06;
+    text-decoration: underline;
+  }
+  .tituloSecundarioClaro{
+    font-size: 3rem;
+    font-weight: 120;
+    color: #e5f5c7;
+    text-decoration: underline;
+  }
+  .texto{
+    font-size: 30px;
+    color: black;
+    text-align: justify;
+  }
+  /* ----------FOOTER---------- */
+  footer{
+    clear: both;
+    background-color: #172617;
+    height: 22vh;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .tituloTerciario{
+    font-size: 25px;
+    font-weight: 500;
+    color: #c7aeae;
+    text-decoration: none;
+  }
+  .footTexto{
+    font-size: 1.4rem;
+    color: #c7aeae;
+    text-align: justify;
+  }
+  .footInfo{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footRedes{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footBoton{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .footLogo{
+    border-radius: 200px;
+    border-color: black;
+    background-image: url("/img/arriba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  /* Versión Mobile */
+.footLogo{
+  width: 5rem;
+  height: 5rem;
+}
+/* Versión Tablet */
+@media(min-width: 768px){
+  .footLogo{
+    width: 6rem;
+    height: 6rem;
+  }
+}
+/* Versión Escritorio */
+@media(min-width: 992px){
+  .footLogo{
+    width: 8rem;
+    height: 8rem;
+  }
+}
+  .footLogo:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 #f4d03f;
+  }

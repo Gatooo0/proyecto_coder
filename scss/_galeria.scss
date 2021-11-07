@@ -1,0 +1,28 @@
+  /* ----------GALERIA---------- */
+  .galeria{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    align-items: center;
+  }
+  .galCont{
+    display: flex;
+    flex-direction: column;
+  }
+  .galFotos{
+    display: flex;
+  }
+  .galFotos, .galVideos{
+    margin: 1rem;
+  }
+  .cliente1 img{
+    width: 45rem;
+    float: left;
+    border-radius: 40px;
+  }
+  .cliente2 img{
+    width: 45rem;
+    border-radius: 40px;
+    margin-left: 5rem ;
+  }
+  
