@@ -753,7 +753,7 @@ footer {
 .footLogo {
   border-radius: 200px;
   border-color: black;
-  background-image: url("/img/arriba.jpg");
+  background-image: url("../img/arriba.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
